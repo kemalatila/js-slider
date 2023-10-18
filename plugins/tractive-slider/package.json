@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@types/node-sass": "^4.11.5",
+    "node-sass": "^9.0.0",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build:sass": "node-sass ./src/assets/scss/main.scss ./dist/css/styles.css",
+    "watch:sass": "yarn run build:sass && npm run build:sass -- -w",
+    "start:js": "tsc src/main.ts dist/ --watch",
+    "build:js": "tsc src/main.ts dist/js/"
+  }
+}
